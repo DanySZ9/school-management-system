@@ -1,0 +1,32 @@
+El termino DAO (Data Access Object) es un patron de diseño que se utiliza para separar
+la logica de acceso a los datos de la logica de negocio de una aplicacion.
+
+El DAO es una clase cuya unica responsabilidad es comunicarse con la base de datos para realizar
+operaciones CRUD.
+
+Su principal objetivo es que el resto de la aplicacion no tenga que preocuparse por como se obtienen los datos. Si en algun momento se decide
+cambiar de basae de datos solo se tendria que modificar el DAO y no el resto del codigo.
+
+El Modelo es la representacion de los datos y en ella se encuentran los atributos y metodos relacionados con el objeto.
+
+📁 proyecto
+│
+├── Modelo
+│   └── Alumno.java
+│   └── Curso.java
+│
+├── DAO
+│   ├── AlumnoDao.java
+│   └── CursoDao.java
+│   └── InscripcionDao.java
+│
+├── Lib
+│   └── (Archivo jar para realizar operaciones en la base de datos)
+│  
+├── Servicio
+│   └── Escuela.java
+│
+└── Principal
+    └── Main.java
+    └── notas.txt
+    └── escuela.db
